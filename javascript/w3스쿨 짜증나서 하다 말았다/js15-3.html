@@ -1,0 +1,15 @@
+<html>
+	<head><meta charset = "utf-8"><title> w3school 7 </title>
+	</head>
+	<body>
+		<p>In HTML, all global variables will become window variables.</p>
+		<p id="demo"></p>
+		<script>
+			myFunction();
+			document.getElementById("demo").innerHTML = "I can display " + window.carName;
+			function myFunction() {
+				carName = "Volvo";
+			}
+		</script>
+	</body>
+</html>

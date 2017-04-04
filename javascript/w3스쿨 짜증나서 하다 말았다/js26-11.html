@@ -1,0 +1,17 @@
+<html>
+	<head><meta charset = "utf-8"><title> w3school 7 </title>
+	</head>
+	<body>
+		<p>The splice() method adds new elements to an array.</p>
+		<button onclick="myFunction()">Try it</button>
+		<p id="demo"></p>
+		<script>
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			document.getElementById("demo").innerHTML = fruits;
+			function myFunction() {
+				fruits.splice(2, 0, "Lemon", "Kiwi");
+				document.getElementById("demo").innerHTML = fruits;
+			}
+		</script>
+	</body>
+</html>

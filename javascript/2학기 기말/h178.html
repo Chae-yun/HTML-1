@@ -1,0 +1,23 @@
+<html>
+	<head><meta charset = "utf-8"><title> 내장 객체 </title>
+	</head>
+	<body>
+		<script language = "javascript">
+			//Date 객체 생성
+			today = new Date()
+			//날짜, 시간을 읽어오는 메서드
+			document.write("<지금 현재 시스템의 날짜와 시간>" + "<p>")
+			document.write("년도 = " + today.getYear() + "<br>") //익스플로러와 html5는 제대로 나타남
+			document.write("월 = " + (today.getMonth() + 1) + "<br>") //0부터 세기때문에
+			document.write("일 = " + today.getDate() + "<br>") //날짜는 왜?
+			document.write("요일 = " + today.getDay() + "<br>")
+			document.write("시간 = " + today.getHours() + "시")
+			document.write(today.getMinutes() + "분")
+			document.write(today.getSeconds() + "초" + "<p>")
+			//날짜, 시간을 설정하는 메서드
+			document.write("<날짜 시간 표시의 다른 방법>" + "<p>")
+			document.write(today.toLocaleString() + "<br>")
+			document.write(today.toString())
+		</script>
+	</body>
+</html>

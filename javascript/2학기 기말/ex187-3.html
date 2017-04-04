@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title> temp </title>
+  </head>
+  <body>
+
+<script language="javascript">
+	count=0;
+	document.write("구구단을 하자~ 구구단을 하자~"+"<br>"+"<br>")
+	for(i=1; i<=10; i++)
+	{
+		num_1=parseInt(Math.random()*9+1)
+		num_2=parseInt(Math.random()*9+1)
+
+		name=prompt(num_1+"*"+num_2)
+
+	if (name==(num_1*num_2))
+	{
+		alert("정답입니다")
+		count++
+	}
+	else
+	{
+		alert("틀렸습니다. 공부하세요~")
+	}
+	
+	if (name==(num_1*num_2))
+	{
+		document.write(num_1+"*"+num_2+"="+name+"정답"+"<br>")
+	}
+	else
+	{
+		document.write(num_1+"*"+num_2+"="+name+"오답"+"<br>")
+	}
+	
+}
+	document.write("<br>"+"당신의 점수 "+"="+count*10)
+  
+</script>
+  </body>
+</html>

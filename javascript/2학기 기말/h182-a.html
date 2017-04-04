@@ -1,0 +1,18 @@
+<html>
+<head><title>배경색 바꾸기</title>
+	<script language="javascript">
+	function change(black){
+		document.bgcolor=black.value
+	}
+	</script>
+</head>
+<body>
+	<h1>배경색 바꾸기</h1><p>
+	<form action="nothingcg!">
+	 <input type ="radio" name="bgcolor"  value="white" onClick="change('white')">흰색<br>
+ 	 <input type ="radio" name="bgcolor"  value="black" onClick="change('black')">검은색<br>
+	 <input type ="radio" name="bgcolor"  value="green" onClick="change('green')">녹색<br>
+	 <input type ="radio" name="bgcolor"  value="blue" onClick="change('blue')">파란색<br>
+</form>
+</body>
+</html>

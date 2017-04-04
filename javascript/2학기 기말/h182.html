@@ -1,0 +1,29 @@
+<html>
+	<head><meta charset = "utf-8"><title> document 객체사용하기 </title>
+		<script language = "javascript">
+			function bg_color(col)
+			{
+				document.bgColor=col
+			}
+			function fg_color(col)
+			{
+				document.fgColor=col
+			}
+		</script>
+	</head>
+	<body>
+		문서의 배경색을 선택하세요
+		<input type="radio" name="bgcolor" onClick="bg_color('pink')">PinK&nbsp;
+		<input type="radio" name="bgcolor" onClick="bg_color('red')">RED&nbsp;
+		<input type="radio" name="bgcolor" onClick="bg_color('greem')">GREEM&nbsp;
+		<input type="radio" name="bgcolor" onClick="bg_color('green')">GREEN&nbsp; <p>
+		문서의 글자색을 선택하세요
+		<input type="radio" name="fgcolor" onClick="fg_color('pink')">PinK&nbsp;
+		<input type="radio" name="fgcolor" onClick="fg_color('red')">RED&nbsp;
+		<input type="radio" name="fgcolor" onClick="fg_color('greem')">GREEM&nbsp;
+		<input type="radio" name="fgcolor" onClick="fg_color('green')">GREEN&nbsp; <p>
+		<script language = "javascript">
+			document.write("문서타이틀 = " + document.title + "<p>")
+		</script>
+	</body>
+</html>

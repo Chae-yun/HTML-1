@@ -1,0 +1,20 @@
+<html>
+	<head><meta charset = "utf-8"><title> 내장 함수 </title>
+	</head>
+		<script language = "javascript">
+			function buttonclick(button) //this(모든것)을 받았으니까
+			{
+				alert(button.value + "를 눌렀습니다."); //button의 value를 출력
+			}
+		</script>
+	<body>
+		<h1>버튼 테스트</h1>
+		<input type = "button" value="버튼 1" onClick="buttonclick(this)">
+		<!--this는 이게 가지고 있는 모든것-->
+		<input type = "button" value="버튼 2" onClick="buttonclick(this)"><br>
+		<input type = "button" value="버튼 3" onClick="buttonclick(this)">
+		<input type = "button" value="버튼 4" onClick="buttonclick(this)"><br>
+		<input type = "button" value="버튼 5" onClick="buttonclick(this)">
+		<input type = "button" value="버튼 6" onClick="buttonclick(this)">
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<head><meta charset = "utf-8"><title> 함수 호출 </title>
+		<script language = "javascript">
+			function hyber_select(URL)//함수이름과 매개변수 같아도 ??
+			{
+				if(URL.selectedIndex!=0){
+					location.href=URL.options[URL.selectedIndex].value; //배열
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>URL로 가기</h1>
+		<select onChange="hyber_select(this)">
+		<option value="">***검색메뉴선택</option>
+		<option value="http://www.naver.com">naver</option>
+		<option value="http://www.daum.net">daum</option>
+		<option value="http://www.nate.com">nate</option>
+		<option value="http://www.facebook.com">facebook</option>
+		</select>
+	</body>
+</html>

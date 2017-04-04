@@ -1,0 +1,15 @@
+<html>
+	<head><meta charset = "utf-8"><title> w3school 7 </title>
+	</head>
+	<body>
+		<p>This "home made" function, when used on an array, returns true.</p>
+		<p id="demo"></p>
+		<script>
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			document.getElementById("demo").innerHTML = isArray(fruits);
+			function isArray(myArray) {
+				return myArray.constructor.toString().indexOf("Array") > -1;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <title>링크 스타일</title>
+ <style type="text/css">
+ <!--
+ /* 기본으로 적용되는 링크 스타일 */
+ a:link{color:black; text-decoration:none}
+ a:visited{color:red; text-decoration:none}
+ a:active{color:purple; text-decoration:none}
+ a:hover{color:blue; text-decoration:underline}
+ /* class를 사용할 때 적용되는 링크 스타일*/
+ .su a:link{color:black; text-decoration:underline}
+ a:hover{color:green; text-decoration:underline}
+ td{border-style:double; background-color:yellow; text-align:center
+ -->
+ </style>
+ </head>
+ <body>
+ <table width="500" height="50" border="1" align="center">
+  <tr>
+   <td><a href="http://www.naver.com/" target="_blank">처음으로</a></td>
+   <td><a href="#">교사마당</a></td>
+   <td><a href="#">학생마당</a></td>
+   <td><a href="#">학부모마당</a></td>
+  </tr>
+  <tr class="su">
+   <td><a href="#">언어영역</a></td>
+   <td><a href="#">수리영역</a></td>
+   <td><a href="#">외국어영역</a></td>
+   <td><a href="#">직탐영역</a></td>
+  </tr>
+ </table>
+ </body>
+</html>

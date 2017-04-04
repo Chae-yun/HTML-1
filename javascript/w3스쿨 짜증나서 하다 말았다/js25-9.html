@@ -1,0 +1,21 @@
+<html>
+	<head><meta charset = "utf-8"><title> w3school 7 </title>
+	</head>
+	<body>
+		<p>The best way to loop through an array is using a standard for loop:</p>
+		<button onclick="myFunction()">Try it</button>
+		<p id="demo"></p>
+		<script>
+			function myFunction() {
+				var index;
+				var text = "<ul>";
+				var fruits = ["Banana", "Orange", "Apple", "Mango"];
+				for (index = 0; index < fruits.length; index++) {
+					text += "<li>" + fruits[index] + "</li>";
+				}
+				text += "</ul>";
+				document.getElementById("demo").innerHTML = text;
+			}
+		</script>
+	</body>
+</html>

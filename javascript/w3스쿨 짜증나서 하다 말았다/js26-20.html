@@ -1,0 +1,12 @@
+<html>
+	<head><meta charset = "utf-8"><title> w3school 7 </title>
+	</head>
+	<body>
+		<p>The highest number is <span id="demo"></span></p>
+		<script>
+			var points = [40, 100, 1, 5, 25, 10];
+			points.sort(function(a, b){return a-b});
+			document.getElementById("demo").innerHTML = points[0];
+		</script>
+	</body>
+</html>

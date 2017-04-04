@@ -1,0 +1,21 @@
+<html> <!--이거 구조도 외워야 하나?-->
+	<head><meta charset = "utf-8"><title> confirm 응용 </title>
+	<script language = "javascript">
+			function askOption(question){
+				ans=confirm(question)
+				if(ans==true)
+					return "찬성합니다"
+				else
+					return "반대합니다"
+			}
+		</script>
+	</head>
+	<body>
+		<h1>JAVA동우회 모임에 찬성하십니까?</h1>
+		<script language = "javascript">
+			//answer=confirm("찬성하면 확인 버튼, 반대하면 취소 버튼.")
+			answer=askOption("찬성하면 확인 버튼, 반대하면 취소 버튼.")
+			document.write(answer)
+		</script>
+	</body>
+</html>

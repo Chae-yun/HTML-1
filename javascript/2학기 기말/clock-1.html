@@ -1,0 +1,28 @@
+<html>
+	<head><meta charset = "utf-8"><title> 시간객체응용 </title>
+		<script language = "javascript">
+			function getTime()
+			{
+				var theTime=new Date()
+				var H=theTime.getHours()
+				var M=theTime.getMinutes()
+				var S=theTime.getSeconds()
+				var timeValue=""+((H>12) ? H-12 : H)
+				timeValue+=((M<10) ? ":0" : ":")+M
+				timeValue+=((S<10) ? ":0" : ":")+S
+				timeValue+=(H>=12) ? " P.M." : " A.M."
+				document.clock.face.value=timeValue
+			}
+		</script>
+	</head>
+	<body bgcolor="#ffff00">
+		<center>
+		<h2>
+		<form name="clock" fontsize=70>
+			<input type="text" size=12 name="face" value="">
+			<input type="button" value="move" onClick="getTime()">
+		</form>
+		</h2>
+		</center>
+	</body>
+</html>
